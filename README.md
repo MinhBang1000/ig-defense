@@ -9,6 +9,14 @@ Offline evaluation of a defense for tool-using LLM agents:
 Primary cascade: **Screen-Gate-Audit** (paper L1-L2-L3). Names identify mechanisms,
 not positions. The legacy/paper mapping is explicit in `config/experiments.yaml`.
 
+## Testbed
+
+The [InteractionGuard testbed](https://github.com/MinhBang1000/interactionguard_testbed)
+generates the benign and attack execution traces used in this evaluation.
+This repository prepares those traces and runs the offline defense experiments.
+Use the included raw traces and fixed split/judge inputs to reproduce this dataset;
+generating new traces with the testbed creates a new dataset.
+
 ## Setup
 
 Run from the repository root. Real experiments require an appropriate NVIDIA
