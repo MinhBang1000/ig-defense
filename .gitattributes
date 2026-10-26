@@ -1,0 +1,2 @@
+# Preserve raw traces and judgment caches byte-for-byte across checkouts.
+*.jsonl -text

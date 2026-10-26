@@ -1,0 +1,89 @@
+# Publish raw traces and the fixed inputs needed to rebuild the dataset.
+/data/*
+!/data/raw/
+!/data/splits/
+/data/splits/*
+!/data/splits/split_manifest.json
+/eval/*
+!/eval/prompt_success_judgements.jsonl
+!/eval/prompt_success_reviews.jsonl
+/results/
+/zenodo/
+
+# Backups and private notes remain local.
+/backup/
+/docs/
+
+# Local environments, model caches and assistant/account settings.
+/.venv/
+/venv/
+/env/
+/.cache/
+/.agents/
+/.codex/
+/.claude/
+/.aws/
+.ssh/
+
+# Credentials. Only a sanitized example may be committed, never real values.
+.env
+.env.*
+!.env.example
+.netrc
+.pypirc
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Python and tooling caches.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.egg-info/
+build/
+dist/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Weights, checkpoints, embeddings and serialized model caches anywhere.
+# Do not blanket-ignore JSON/YAML/CSV: configs and test fixtures need tracking.
+*.safetensors
+*.pth
+*.pt
+*.bin
+*.ckpt
+*.gguf
+*.onnx
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+*.arrow
+
+# Archives and execution logs are local artifacts, not source.
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.tar.bz2
+*.tar.xz
+*.7z
+*.rar
+*.log
